@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - My Flask Website</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+  </head>
+  <body>
+    <!-- Include the navbar -->
+    {% include 'navbar.html' %}
+
+    <header>
+      <h1>About Us</h1>
+      <p>
+        We are dedicated to providing the best service and solutions for your
+        web applications.
+      </p>
+    </header>
+
+    <section>
+      <h2>Our Mission</h2>
+      <p>
+        To empower businesses through innovative web solutions that drive
+        success.
+      </p>
+    </section>
+
+    <section>
+      <h2>Our Team</h2>
+      <p>
+        Our team consists of skilled professionals who are passionate about
+        technology and development.
+      </p>
+    </section>
+
+    {% include 'navbar.html' %}
+  </body>
+</html>
