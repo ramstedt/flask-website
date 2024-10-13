@@ -1,38 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Flask Landing Page</title>
-    <link
-      rel="stylesheet"
-      href="{{ url_for('static', filename='styles.css') }}"
-    />
-  </head>
-  <body>
-    {% include 'navbar.html' %}
+{% include 'head.html' %}
 
-    <header>
-      <h1>Welcome to My Flask Website</h1>
-      <p>Your one-stop solution for amazing web apps.</p>
-      <a href="#about" class="cta-button">Learn More</a>
-    </header>
+<header>
+  <h1>Welcome to My Flask Website</h1>
+  <p>Your one-stop solution for amazing web apps.</p>
+  <a href="#about" class="cta-button">Learn More</a>
+</header>
 
-    <section id="about">
-      <h2>About Us</h2>
-      <p>We build powerful, scalable web applications with Flask.</p>
-    </section>
+<section id="about">
+  <h2>About Us</h2>
+  <p>We build powerful, scalable web applications with Flask.</p>
+</section>
 
-    <section id="services">
-      <h2>Our Services</h2>
-      <p>Explore the services we offer.</p>
-    </section>
+<section id="services">
+  <h2>Our Services</h2>
+  <p>Explore the services we offer.</p>
+</section>
 
-    <section id="contact">
-      <h2>Contact Us</h2>
-      <p>Get in touch with us.</p>
-    </section>
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p>Get in touch with us.</p>
+</section>
 
-    {% include 'footer.html' %}
-  </body>
-</html>
+{% include 'footer.html' %}
